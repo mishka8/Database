@@ -1,0 +1,2 @@
+SELECT first_name, hire_date, EXTRACT(MONTH FROM(DATE_TRUNC('MONTH', hire_date))) - 1 as begin_month, EXTRACT(DAY FROM(DATE_TRUNC('DAY', hire_date))) as begin_day
+FROM employees e
